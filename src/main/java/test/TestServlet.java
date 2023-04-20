@@ -1,6 +1,8 @@
 package test;
 
+
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,9 +16,8 @@ import javax.servlet.http.HttpServletResponse;
 public class TestServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) {
-		response.setCharacterEncoding(("UTF-8");
-		response.getWriter().append("test");
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+	response.getWriter().append("test test");
 	}
 		
 	}
